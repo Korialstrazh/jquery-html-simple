@@ -38,14 +38,12 @@ List of usable tags:
 * code
 * col
 * colgroup
-* data
 * datalist
 * dd
 * details
 * dfn
 * div
 * dl
-* dt
 * dt
 * em
 * embed
@@ -59,7 +57,6 @@ List of usable tags:
 * h3
 * h4
 * h5
-* h6
 * h6
 * header
 * hr
@@ -88,7 +85,6 @@ List of usable tags:
 * option
 * output
 * p
-* param
 * pre
 * progress
 * q
@@ -119,7 +115,6 @@ List of usable tags:
 * title
 * tr
 * track
-* type
 * u
 * ul
 * value

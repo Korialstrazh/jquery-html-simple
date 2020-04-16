@@ -35,14 +35,12 @@ else {
     "code",
     "col",
     "colgroup",
-    "data",
     "datalist",
     "dd",
     "details",
     "dfn",
     "div",
     "dl",
-    "dt",
     "dt",
     "em",
     "embed",
@@ -56,7 +54,6 @@ else {
     "h3",
     "h4",
     "h5",
-    "h6",
     "h6",
     "header",
     "hr",
@@ -85,7 +82,6 @@ else {
     "option",
     "output",
     "p",
-    "param",
     "pre",
     "progress",
     "q",
@@ -116,13 +112,15 @@ else {
     "title",
     "tr",
     "track",
-    "type",
     "u",
     "ul",
     "value",
     "video",
     "wbr"
-  ], (i, tag) => { if (tag.length > 0) generateTagFunction(tag); });
+  ], (i, tag) => {
+    if ($[tag] == undefined) generateTagFunction(tag); 
+    else console.warn("simplified version for", tag, "generation can't be created since this tag is already used by jQuery"); 
+  });
 }
 
 
